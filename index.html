@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário de Vôlei</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url(download\ \(2\).jfif);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            padding: 20px;
+        }
+
+        form {
+            background-color: #171716;
+            padding: 20px;
+            border-radius: 8px;
+            max-width: 520px;
+            margin: auto;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        input,
+        select,
+        textarea {
+            width: 97%;
+            padding: 8px;
+            margin-top: 5px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 10px;
+            width: 100%;
+            background-color: #0077ff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #005bd1;
+        }
+
+        .titulo {
+            text-align: center;
+            font-family: Georgia, 'Times New Roman', Times, serif
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+    <form>
+      
+        <label>
+            <h2 class="titulo">Formulário sobre Vôlei - Posições e Informações</h2>
+        </label>
+
+
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+
+        <label for="idade">Idade:</label>
+        <input type="number" id="idade" name="idade" placeholder="Digite sua idade" required>
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" placeholder="exemplo@email.com" required>
+
+        <label for="telefone">Telefone:</label>
+        <input type="tel" id="telefone" name="telefone" placeholder="Digite seu telefone" required>
+
+       
+        <label for="posicao">Escolha sua posição favorita no vôlei:</label>
+        <select id="posicao" name="posicao" required>
+            <option value="">Selecione uma posição</option>
+            <option value="levantador">Levantador</option>
+            <option value="oposto">Oposto</option>
+            <option value="central">Central</option>
+            <option value="ponteiro">Ponteiro</option>
+            <option value="libero">Líbero</option>
+
+
+
+        </select>
+
+
+        <label for="relato">Fale oque vc sabe sobre as outras Posições: </label>
+        <textarea id="relato" name="relato" rows="4" placeholder="Diga o seu relato.."></textarea>
+
+        <label for="experiencia">Você já jogou vôlei?</label><br>
+        <select id="posicao" name="experiencia" required>
+
+            <option value="Sim">Sim</option>
+            <option value="Nao">Nao</option>
+        </select>
+
+
+
+
+
+
+        <label for="comentarios">Fale sobre oque vc acha do vôlei: </label>
+        <textarea id="comentarios" name="comentarios" rows="4" placeholder="Escreva aqui..."></textarea>
+
+        <button type="submit">Enviar</button>
+    </form>
+
+</body>
+
+</html>
